@@ -1,0 +1,48 @@
+body {
+    background-image: url(./images/background.jpg);
+    height:700px;
+    width:1500px
+}
+
+h1 {
+    font-size: 100px;
+    margin: 10px 0 0 410px;
+    background: transparent;
+    font-family: "Tiny5", sans-serif;
+    color: rgb(67, 158, 44);
+}
+
+h2 {
+    background: transparent;
+    margin: 0 0 10px 720px;
+    font-family: "Bebas Neue", sans-serif;
+    color: black;
+    font-size: 30px;
+}
+#board{
+    width:540px;
+    height:540px;
+    background-image: linear-gradient(rgba(19, 53, 20, 0.216),rgba(19, 53, 20, 0.216)),url(./images/♡Wallpaper♡.jpg);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+
+}
+#board div{
+    width:180px;
+    height:180px;
+    background-image: url(./images/pipe.png);
+    background-size: cover;
+}
+
+#board div img{
+    height:120px;
+    width:120px;
+    margin:0 0 0 50px;
+}
+#peppa{
+    height:350px;
+    width:250px;
+    margin: -600px 0 0 1200px;
+}
