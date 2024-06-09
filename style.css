@@ -1,48 +1,102 @@
 body {
     background-image: url(./images/background.jpg);
-    height:700px;
-    width:1500px
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
-    font-size: 100px;
-    margin: 10px 0 0 410px;
+    font-size: 7vw;
+    margin: 8px 0 0 0;
     background: transparent;
     font-family: "Tiny5", sans-serif;
     color: rgb(67, 158, 44);
+    text-align: center;
 }
 
 h2 {
     background: transparent;
-    margin: 0 0 10px 720px;
+    margin: 0 0 10px 0;
     font-family: "Bebas Neue", sans-serif;
     color: black;
-    font-size: 30px;
+    font-size: 2vw;
+    text-align: center;
 }
-#board{
-    width:540px;
-    height:540px;
-    background-image: linear-gradient(rgba(19, 53, 20, 0.216),rgba(19, 53, 20, 0.216)),url(./images/♡Wallpaper♡.jpg);
+
+#board {
+    width: 80vw;
+    max-width: 540px;
+    height: 80vw;
+    max-height: 540px;
+    background-image: linear-gradient(rgba(19, 53, 20, 0.216), rgba(19, 53, 20, 0.216)), url(./images/♡Wallpaper♡.jpg);
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     border-radius: 25px;
-
 }
-#board div{
-    width:180px;
-    height:180px;
+
+#board div {
+    width: 33.33%;
+    height: 33.33%;
     background-image: url(./images/pipe.png);
     background-size: cover;
+    position: relative;
 }
 
-#board div img{
-    height:120px;
-    width:120px;
-    margin:0 0 0 50px;
+#board div img {
+    height: 70%;
+    width: 70%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-#peppa{
-    height:350px;
-    width:250px;
-    margin: -600px 0 0 1200px;
+
+#peppa {
+    height: 25vw;
+    width: 20vw;
+    max-height: 350px;
+    max-width: 250px;
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
+    margin: 200px -100px 0 0;
 }
+
+/* Media Queries for different screen sizes */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 12vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+
+    #peppa {
+        top: 15vh;
+        right: 5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 15vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    #peppa {
+        top: 20vh;
+        right: 5vw;
+    }
+}
+

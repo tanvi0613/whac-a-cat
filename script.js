@@ -50,6 +50,9 @@ function setHammer(){
     }
     let hammer = document.createElement("img");
     hammer.src = "./images/hammer.png";
+    hammer.style.width = "100px";
+    hammer.style.height = "100px";
+    hammer.style.marginTop = "20px";
 
     let num = getRandomTile();
     if(currPeppaTile && currPeppaTile.id==num){
