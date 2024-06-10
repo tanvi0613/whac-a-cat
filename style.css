@@ -1,4 +1,4 @@
-body {
+/* body {
     background-image: url(./images/background.jpg);
     height: 100vh;
     width: 100vw;
@@ -68,7 +68,6 @@ h2 {
     margin: 200px -100px 0 0;
 }
 
-/* Media Queries for different screen sizes */
 
 @media (max-width: 768px) {
     h1 {
@@ -97,6 +96,160 @@ h2 {
     #peppa {
         top: 20vh;
         right: 5vw;
+    }
+}
+ */
+
+
+ body {
+    background-image: url(./images/background.jpg);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 7vw;
+    margin: 8px 0 0 0;
+    background: transparent;
+    font-family: "Tiny5", sans-serif;
+    color: rgb(67, 158, 44);
+    text-align: center;
+}
+
+h2 {
+    background: transparent;
+    margin: 0 0 10px 0;
+    font-family: "Bebas Neue", sans-serif;
+    color: black;
+    font-size: 2vw;
+    text-align: center;
+}
+
+#board {
+    width: 80vw;
+    max-width: 540px;
+    height: 80vw;
+    max-height: 540px;
+    background-image: linear-gradient(rgba(19, 53, 20, 0.216), rgba(19, 53, 20, 0.216)), url(./images/♡Wallpaper♡.jpg);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+#board div {
+    width: 33.33%;
+    height: 33.33%;
+    background-image: url(./images/pipe.png);
+    background-size: cover;
+    position: relative;
+}
+
+#board div img {
+    height: 70%;
+    width: 70%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#board .hammer{
+    height:100px;
+    width:100px;
+}
+#peppa {
+    height: 25vw;
+    width: 20vw;
+    max-height: 350px;
+    max-width: 250px;
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
+    margin: 200px -100px 0 0;
+}
+
+/* Media Queries for different screen sizes */
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+    #peppa {
+        top: 12vh;
+        right: 8vw;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 12vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+
+    #board {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    #board div {
+        width: 33.33%;
+        height: 33.33%;
+    }
+    #board .hammer{
+        height:80px;
+        width:80px;
+    }
+
+    #peppa {
+        top: 15vh;
+        right: 5vw;
+        height: 30vw;
+        width: 25vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 15vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    #board {
+        width: 100vw;
+        height: 100vw;
+    }
+
+    #board div {
+        width: 33.33%;
+        height: 33.33%;
+    }
+    #board .hammer{
+        height:60px;
+        width:60px;
+    }
+
+    #peppa {
+        top: 20vh;
+        right: 5vw;
+        height: 35vw;
+        width: 30vw;
     }
 }
 

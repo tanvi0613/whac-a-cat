@@ -30,14 +30,14 @@ function setPeppa(){
     if(currPeppaTile) {
         currPeppaTile.innerHTML = "";
     }
-    let mole = document.createElement("img");
-    mole.src = "./images/peppa.png";
+    let peppaimg = document.createElement("img");
+    peppaimg.src = "./images/peppa.png";
     let num = getRandomTile();
     if(currHammerTile && currHammerTile.id==num){
         return;
     }
     currPeppaTile = document.getElementById(num);
-    currPeppaTile.appendChild(mole);
+    currPeppaTile.appendChild(peppaimg);
 }
 
 function setHammer(){
@@ -50,9 +50,10 @@ function setHammer(){
     }
     let hammer = document.createElement("img");
     hammer.src = "./images/hammer.png";
-    hammer.style.width = "100px";
-    hammer.style.height = "100px";
-    hammer.style.marginTop = "20px";
+    hammer.classList.add("hammer");
+    // hammer.style.width = "100px";
+    // hammer.style.height = "100px";
+    // hammer.style.marginTop = "20px";
 
     let num = getRandomTile();
     if(currPeppaTile && currPeppaTile.id==num){
